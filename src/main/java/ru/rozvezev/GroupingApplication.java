@@ -66,7 +66,7 @@ public class GroupingApplication {
                 }
 
                 /*Если groupFound=true, то мы нашли подходящую группу данной строке, и нам нужно снова пробежаться по
-                всем элеметам данной строки и переназначить или назначить им номер найденной группы. Если groupFound=true
+                всем элеметам данной строки и переназначить или назначить им номер найденной группы. Если groupFound=false
                 добавляем новую группу в список.*/
                 if (groupFound) {
                     for (int i = 0; i < elementsArray.length; i++) {
@@ -85,7 +85,7 @@ public class GroupingApplication {
             }
 
 
-            
+
             ///// Вывод в файл /////
 
             fileWriter.write("Число групп с более чем одним элементом: "
