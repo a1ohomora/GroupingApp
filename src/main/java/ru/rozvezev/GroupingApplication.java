@@ -21,7 +21,7 @@ public class GroupingApplication {
             ///// Подготовка данных /////
 
             long startTime = System.currentTimeMillis();
-            List<String[]> ListOfElementsArrays = streamFromFile.map(str -> str.split(";"))
+            List<String[]> listOfElementsArrays = streamFromFile.map(str -> str.split(";"))
                     .map(arr -> Arrays.stream(arr)
                             .map(str -> str.substring(1, str.length() - 1))
                             .collect(Collectors.joining(";")))
@@ -42,7 +42,7 @@ public class GroupingApplication {
             Integer groupNumber = null;
             boolean groupFound;
             int groupsSize;
-            for (String[] elementsArray : ListOfElementsArrays) {
+            for (String[] elementsArray : listOfElementsArrays) {
                 groupFound = false;
                 groupsSize = groups.size();
 
