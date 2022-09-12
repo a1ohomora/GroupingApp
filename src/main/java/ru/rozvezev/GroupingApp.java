@@ -13,7 +13,7 @@ import java.util.stream.Stream;
  * Приложение для группировки строк.
  *
  * Файл для обработки передаётся в качестве аргумента (java -jar GroupingApp.jar тестовый-файл.txt). Вывод
- * осуществляется в файл "output.txt" в той же папке, что и jar-файл.
+ * осуществляется в файл "./output.txt".
  */
 public class GroupingApp {
 
