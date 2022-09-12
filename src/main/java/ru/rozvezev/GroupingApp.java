@@ -18,6 +18,12 @@ import java.util.stream.Stream;
 public class GroupingApp {
 
     public static void main(String[] args) {
+
+        if (args.length == 0){
+            System.out.println("Укажите путь к файлу в качестве аргумента.");
+            return;
+        }
+
         try (FileWriter fileWriter = new FileWriter("./output.txt", false);
              Stream<String> streamFromFile = Files.lines(Paths.get(args[0]))) {
 
