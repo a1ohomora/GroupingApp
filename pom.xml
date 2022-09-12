@@ -7,6 +7,7 @@
   <groupId>ru.rozvezev</groupId>
   <artifactId>GroupingApp</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
 
   <name>GroupingApp</name>
   <!-- FIXME change it to the project's website -->
@@ -78,6 +79,19 @@
         <configuration>
           <source>16</source>
           <target>16</target>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <mainClass>ru.rozvezev.GroupingApp</mainClass>
+            </manifest>
+          </archive>
         </configuration>
       </plugin>
     </plugins>
